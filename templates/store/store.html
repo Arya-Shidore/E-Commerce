@@ -5,7 +5,7 @@
 	<div class="container">
 	
 	<div class="intro-banner-wrap">
-		<img src="{% static 'images/banners/1.jpg' %}" class="img-fluid rounded">
+		<img src="{% static 'images/coverpage.png' %}" class="img-fluid rounded">
 	</div>
 	
 	</div> <!-- container //  -->
@@ -135,10 +135,10 @@
 					<div class="fix-height">
 						<a href="{{ i.get_url}}" class="title">{{i.product_name}}</a>
 						<div class="price-wrap mt-2">
-							<span class="price">{{i.price}}</span>
+							<span class="price">${{i.price}}</span>
 						</div> <!-- price-wrap.// -->
 					</div>
-					<a href="#" class="btn btn-block btn-primary">Add to cart </a>
+					<a href="{{i.get_url}}" class="btn btn-block btn-primary">Add to cart </a>
 				</figcaption>
 			</figure>
 		</div> <!-- col.// -->
